@@ -3,38 +3,88 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="assets/css/style.css">  
   <title>Frontend Mentor | FAQ Accordion Card</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
-  How many team members can I invite?
-  You can invite up to 2 additional users on the Free plan. There is no limit on 
-  team members for the Premium plan.
+  <div class="container">
 
-  What is the maximum file upload size?
-  No more than 2GB. All files in your account must fit your allotted storage space.
+    <main>
 
-  How do I reset my password?
-  Click “Forgot password” from the login page or “Change password” from your profile page.
-  A reset link will be emailed to you.
+      <div class="main-image">
 
-  Can I cancel my subscription?
-  Yes! Send us a message and we’ll process your request no questions asked.
+        <div class="box-image">
+          <img src="/images/illustration-box-desktop.svg" alt="box" class="box" />
 
-  Do you provide additional support?
-  Chat and email support is available 24/7. Phone lines are open during normal business hours.
+        </div>
+        
+        <div class="inside-images">
+          <img src="/images/illustration-woman-online-mobile.svg" alt="woman-online" class="bg-image"/>
+        </div>
+          <img src="/images/bg-pattern-mobile.svg" alt="bg-pattern-mobile" class ="bg-mobile" />
 
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+
+
+        
+
+      </div>
+      <div class="content">
+        
+        <h1>FAQ</h1>
+        <div class="accordion-container">
+          <div class="acc">
+            <div class="accordion-header accodion-header1">
+              <span class="main-text">How many team members can I invite?</span>
+              <img src="/images/icon-arrow-down.svg" alt="arrow-icon" class="button button1" />
+            </div>
+            <div id="accordion1" class="hide">
+              <span>You can invite up to 2 additional users on the Free plan. There is no limit on 
+              team members for the Premium plan.</span>
+            </div>
+          </div>
+          <div class="acc">
+            <div class="accordion-header accodion-header2">
+              <span class="main-text">What is the maximum file upload size?</span>
+              <img src="/images/icon-arrow-down.svg" alt="arrow-icon" class="button button2" />
+            </div>
+            <div id="accordion2" class="hide">
+              <span>No more than 2GB. All files in your account must fit your allotted storage space.</span> 
+            </div>
+          </div>
+          <div class="acc">
+            <div class="accordion-header accodion-header3">
+              <span class="main-text">How do I reset my password?</span>
+              <img src="/images/icon-arrow-down.svg" alt="arrow-icon" class="button button3" />
+            </div>
+            <div id="accordion3" class="hide">
+              <span>“Forgot password” from the login page or “Change password” from your profile page.
+              A reset link will be emailed to you.</span> 
+            </div>
+          </div>
+          <div class="acc">
+            <div class="accordion-header accodion-header4">
+              <span class="main-text">Can I cancel my subscription?</span>
+              <img src="/images/icon-arrow-down.svg" alt="arrow-icon" class="button button4" />
+            </div>
+            <div id="accordion4" class="hide">
+              <span>Yes! Send us a message and we’ll process your request no questions asked.</span>
+            </div>
+          </div>
+          <div class="acc">
+            <div class="accordion-header accodion-header5">
+              <span class="main-text">Do you provide additional support?</span>
+              <img src="/images/icon-arrow-down.svg" alt="arrow-icon" class="button button5" />
+            </div>
+            <div id="accordion5" class="hide">
+              <span>Chat and email support is available 24/7. Phone lines are open during normal business hours.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
   </div>
+
+
+  <script src="assets/js/script.js"></script>
 </body>
 </html>

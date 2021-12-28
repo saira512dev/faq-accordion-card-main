@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Kumbh Sans', sans-serif;
+  background-image: linear-gradient(#af67e9, #6565e7); }
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; }
+
+main {
+  margin: 10px;
+  padding: 10px;
+  width: 320px;
+  display: flex;
+  flex-direction: column; }
+  main .box {
+    display: none; }
+
+.main-image {
+  height: 100px;
+  width: 100%; }
+  .main-image img {
+    left: 0px;
+    top: 0px;
+    width: 200px;
+    height: 200px;
+    transform: translate(25%, -7%); }
+  .main-image .bg-mobile {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    height: 90px;
+    width: 200px;
+    transform: translate(25%, -110%); }
+
+.content {
+  border-radius: 20px;
+  background: white;
+  padding: 120px 10px 10px 10px; }
+  .content h1 {
+    text-align: center;
+    margin-bottom: 20px; }
+  .content span {
+    font-size: 12px;
+    color: #787887;
+    text-align: left; }
+  .content .accordion-container {
+    align-items: left;
+    margin-bottom: 40px;
+    margin-left: 20px;
+    margin-right: 20px; }
+    .content .accordion-container .acc {
+      border-bottom: 1px solid #e7e7e9; }
+      .content .accordion-container .acc .accordion-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center; }
+        .content .accordion-container .acc .accordion-header .main-text {
+          margin-bottom: 15px;
+          margin-top: 10px;
+          color: #4a4b5e;
+          font-size: 12px; }
+          .content .accordion-container .acc .accordion-header .main-text:hover {
+            color: #f47c57; }
+        .content .accordion-container .acc .accordion-header .button {
+          width: 10px;
+          height: 8px; }
+        .content .accordion-container .acc .accordion-header .rotate180 {
+          transform: rotate(180deg);
+          transition: 0.3s ease-in-out; }
+        .content .accordion-container .acc .accordion-header .show {
+          color: #1d1e35;
+          font-weight: 700;
+          transition: 0.3s ease-in-out; }
+      .content .accordion-container .acc .hide {
+        display: none;
+        transition: 0.3s ease-in-out; }
+
+#accordion1 {
+  font-size: 12px;
+  color: #787887;
+  padding-right: 20px;
+  padding-bottom: 15px; }
+
+#accordion2 {
+  font-size: 12px;
+  color: #787887;
+  padding-right: 20px;
+  padding-bottom: 15px; }
+
+#accordion3 {
+  font-size: 12px;
+  color: #787887;
+  padding-right: 20px;
+  padding-bottom: 15px; }
+
+#accordion4 {
+  font-size: 12px;
+  color: #787887;
+  padding-right: 20px;
+  padding-bottom: 15px; }
+
+#accordion5 {
+  font-size: 12px;
+  color: #787887;
+  padding-right: 20px;
+  padding-bottom: 15px; }
+
+@media (min-width: 768px) {
+  main {
+    flex-direction: row;
+    width: 640px;
+    background: white;
+    padding: 0px;
+    border-radius: 20px;
+    gap: 0px; }
+
+  .main-image {
+    align-self: flex-end;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px 0 0 20px;
+    background: url("/images/bg-pattern-desktop.svg") no-repeat;
+    background-size: 700px 700px;
+    background-position: left -47vh top -26vh; }
+    .main-image .inside-images {
+      height: 100%;
+      overflow: hidden;
+      position: relative;
+      top: -57px; }
+    .main-image .bg-image {
+      position: relative;
+      left: 0px;
+      top: 0px;
+      width: 100%;
+      height: 100%;
+      transform: translate(-18%, 0%);
+      content: url("/images/illustration-woman-online-desktop.svg"); }
+    .main-image .bg-mobile {
+      display: none; }
+    .main-image .box {
+      display: block;
+      position: relative;
+      top: 150px;
+      left: -70px;
+      height: 100px;
+      width: 100px;
+      z-index: 1; }
+
+  .content {
+    width: 100%;
+    height: 100%;
+    border-radius: 0 20px 20px 0;
+    background: white;
+    padding: 40px 10px 10px 0px;
+    margin: 0 0 0 -35px; }
+    .content h1 {
+      text-align: left;
+      padding-left: 20px; } }
+
+/*# sourceMappingURL=style.css.map */
